@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ui version="4.0">
+  <class>debugWindow</class>
+  <widget class="QDialog" name="debugWindow">
+    <property name="geometry">
+      <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>521</width>
+        <height>459</height>
+      </rect>
+    </property>
+    <property name="windowTitle">
+      <string>Debug</string>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+        <widget class="QTextEdit" name="debugTextEdit">
+          <property name="readOnly">
+            <bool>true</bool>
+          </property>
+          <property name="overwriteMode">
+            <bool>false</bool>
+          </property>
+        </widget>
+      </item>
+    </layout>
+  </widget>
+  <resources/>
+  <connections/>
+</ui>

@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Dateien">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+    </Filter>
+    <Filter Include="Header Dateien">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Form Dateien">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Dateien">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generierte Dateien">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generierte Dateien\Debug">
+      <UniqueIdentifier>{466f8854-ad25-48c7-8f03-158a7dd92a2e}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generierte Dateien\Release">
+      <UniqueIdentifier>{3a1e5ac6-fdf4-486c-b24c-42e939be2487}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Dateien</Filter>
+    </ClCompile>
+    <ClCompile Include="mastercpclient.cpp">
+      <Filter>Source Dateien</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_mastercpclient.cpp">
+      <Filter>Generierte Dateien\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_mastercpclient.cpp">
+      <Filter>Generierte Dateien\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_mastercpclient.cpp">
+      <Filter>Generierte Dateien</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_style.cpp">
+      <Filter>Generierte Dateien</Filter>
+    </ClCompile>
+    <ClCompile Include="NBinaryStream.cpp">
+      <Filter>Source Dateien</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="mastercpclient.h">
+      <Filter>Header Dateien</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mastercpclient.ui">
+      <Filter>Form Dateien</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mastercpclient.qrc">
+      <Filter>Resource Dateien</Filter>
+    </CustomBuild>
+    <CustomBuild Include="qdarkstyle\style.qrc">
+      <Filter>Resource Dateien</Filter>
+    </CustomBuild>
+    <CustomBuild Include="debugWindow.ui">
+      <Filter>Form Dateien</Filter>
+    </CustomBuild>
+    <CustomBuild Include="addOrderWindow.ui">
+      <Filter>Form Dateien</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GeneratedFiles\ui_mastercpclient.h">
+      <Filter>Generierte Dateien</Filter>
+    </ClInclude>
+    <ClInclude Include="protocol.h">
+      <Filter>Header Dateien</Filter>
+    </ClInclude>
+    <ClInclude Include="NBinaryStream.hpp">
+      <Filter>Header Dateien</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_debugWindow.h">
+      <Filter>Generierte Dateien</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_addOrderWindow.h">
+      <Filter>Generierte Dateien</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="qdarkstyle\rc\up_arrow_disabled.png">
+      <Filter>Resource Dateien</Filter>
+    </Image>
+    <Image Include="qdarkstyle\rc\Hmovetoolbar.png">
+      <Filter>Resource Dateien</Filter>
+    </Image>
+    <Image Include="qdarkstyle\rc\stylesheet-branch-end.png">
+      <Filter>Resource Dateien</Filter>
+    </Image>
+    <Image Include="qdarkstyle\rc\branch_closed-on.png">
+      <Filter>Resource Dateien</Filter>
+    </Image>
+    <Image Include="qdarkstyle\rc\stylesheet-vline.png">
+      <Filter>Resource Dateien</Filter>
+    </Image>
+    <Image Include="qdarkstyle\rc\branch_closed.png">
+      <Filter>Resource Dateien</Filter>
+    </Image>
+    <Image Include="qdarkstyle\rc\branch_open-on.png">
+      <Filter>Resource Dateien</Filter>
+    </Image>
+    <Image Include="qdarkstyle\rc\transparent.png">
+      <Filter>Resource Dateien</Filter>
+    </Image>
+    <Image Include="qdarkstyle\rc\right_arrow_disabled.png">
+      <Filter>Resource Dateien</Filter>
+    </Image>
+    <Image Include="qdarkstyle\rc\sizegrip.png">
+      <Filter>Resource Dateien</Filter>
+    </Image>
+    <Image Include="qdarkstyle\rc\close.png">
+      <Filter>Resource Dateien</Filter>
+    </Image>
+    <Image Include="qdarkstyle\rc\down_arrow.png">
+      <Filter>Resource Dateien</Filter>
+    </Image>
+    <Image Include="qdarkstyle\rc\Vmovetoolbar.png">
+      <Filter>Resource Dateien</Filter>
+    </Image>
+    <Image Include="qdarkstyle\rc\left_arrow.png">
+      <Filter>Resource Dateien</Filter>
+    </Image>
+    <Image Include="qdarkstyle\rc\stylesheet-branch-more.png">
+      <Filter>Resource Dateien</Filter>
+    </Image>
+    <Image Include="qdarkstyle\rc\up_arrow.png">
+      <Filter>Resource Dateien</Filter>
+    </Image>
+    <Image Include="qdarkstyle\rc\right_arrow.png">
+      <Filter>Resource Dateien</Filter>
+    </Image>
+    <Image Include="qdarkstyle\rc\left_arrow_disabled.png">
+      <Filter>Resource Dateien</Filter>
+    </Image>
+    <Image Include="qdarkstyle\rc\Hsepartoolbar.png">
+      <Filter>Resource Dateien</Filter>
+    </Image>
+    <Image Include="qdarkstyle\rc\checkbox.png">
+      <Filter>Resource Dateien</Filter>
+    </Image>
+    <Image Include="qdarkstyle\rc\branch_open.png">
+      <Filter>Resource Dateien</Filter>
+    </Image>
+    <Image Include="qdarkstyle\rc\Vsepartoolbar.png">
+      <Filter>Resource Dateien</Filter>
+    </Image>
+    <Image Include="qdarkstyle\rc\down_arrow_disabled.png">
+      <Filter>Resource Dateien</Filter>
+    </Image>
+    <Image Include="qdarkstyle\rc\undock.png">
+      <Filter>Resource Dateien</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="qdarkstyle\style.qss">
+      <Filter>Resource Dateien</Filter>
+    </None>
+  </ItemGroup>
+</Project>
