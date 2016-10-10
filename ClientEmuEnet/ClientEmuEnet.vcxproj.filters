@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Ressourcendateien">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{08c89fec-84f0-4292-8d91-afdfd8ade4be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\blowfish">
+      <UniqueIdentifier>{ee102b71-e860-4c4d-a1db-5d22b95f7de4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\utf8">
+      <UniqueIdentifier>{648ca165-09cf-4c20-af59-43dade7485ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ENET">
+      <UniqueIdentifier>{3debabcc-d142-49e0-8afe-da57accbc3a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{f4c69a47-1866-421a-83d5-e2c4c2180a2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Entity">
+      <UniqueIdentifier>{af54bdb9-ff80-4209-9ace-1d0e833a5d47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Hero">
+      <UniqueIdentifier>{01f8cc00-35f7-4fe8-98d9-07e9699d510d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Dominion">
+      <UniqueIdentifier>{0d7f3e2f-a024-42c1-9ce6-25a7ff49eda5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\COOPvsAI">
+      <UniqueIdentifier>{8c04c6b7-29c4-4bca-bfdd-a7c5ac619881}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Item">
+      <UniqueIdentifier>{9ab38dbe-8a52-499a-811b-f382ebbc9b0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Minion">
+      <UniqueIdentifier>{edc35b22-2369-4e6f-abce-803787f7014d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scripts">
+      <UniqueIdentifier>{8de04a98-234a-4eab-9651-1a3b909ce3f5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Game\GameClient.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\base64.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\utf8.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\utf8\checked.h">
+      <Filter>Core\utf8</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\utf8\core.h">
+      <Filter>Core\utf8</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\utf8\unchecked.h">
+      <Filter>Core\utf8</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\blowfish\blowfish.h">
+      <Filter>Core\blowfish</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Console.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Packets.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="ENET\enet\callbacks.h">
+      <Filter>ENET</Filter>
+    </ClInclude>
+    <ClInclude Include="ENET\enet.h">
+      <Filter>ENET</Filter>
+    </ClInclude>
+    <ClInclude Include="ENET\enet\list.h">
+      <Filter>ENET</Filter>
+    </ClInclude>
+    <ClInclude Include="ENET\enet\protocol.h">
+      <Filter>ENET</Filter>
+    </ClInclude>
+    <ClInclude Include="ENET\enet\time.h">
+      <Filter>ENET</Filter>
+    </ClInclude>
+    <ClInclude Include="ENET\enet\types.h">
+      <Filter>ENET</Filter>
+    </ClInclude>
+    <ClInclude Include="ENET\enet\unix.h">
+      <Filter>ENET</Filter>
+    </ClInclude>
+    <ClInclude Include="ENET\enet\utility.h">
+      <Filter>ENET</Filter>
+    </ClInclude>
+    <ClInclude Include="ENET\enet\win32.h">
+      <Filter>ENET</Filter>
+    </ClInclude>
+    <ClInclude Include="common.h" />
+    <ClInclude Include="Game\Entity\Entity.h">
+      <Filter>Game\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Hero\Hero.h">
+      <Filter>Game\Hero</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\MemoryStream.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Dominion\Dominion.h">
+      <Filter>Game\Dominion</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Hero\HeroManager.h">
+      <Filter>Game\Hero</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Item\Item.h">
+      <Filter>Game\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Minion\Minion.h">
+      <Filter>Game\Minion</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Minion\MinionManager.h">
+      <Filter>Game\Minion</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ENET\callbacks.c">
+      <Filter>ENET</Filter>
+    </ClCompile>
+    <ClCompile Include="ENET\host.c">
+      <Filter>ENET</Filter>
+    </ClCompile>
+    <ClCompile Include="ENET\list.c">
+      <Filter>ENET</Filter>
+    </ClCompile>
+    <ClCompile Include="ENET\packet.c">
+      <Filter>ENET</Filter>
+    </ClCompile>
+    <ClCompile Include="ENET\peer.c">
+      <Filter>ENET</Filter>
+    </ClCompile>
+    <ClCompile Include="ENET\protocol.c">
+      <Filter>ENET</Filter>
+    </ClCompile>
+    <ClCompile Include="ENET\unix.c">
+      <Filter>ENET</Filter>
+    </ClCompile>
+    <ClCompile Include="ENET\win32.c">
+      <Filter>ENET</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\blowfish\blowfish.cpp">
+      <Filter>Core\blowfish</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\base64.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\GameClient.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Packets.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Game\Hero\Hero.cpp">
+      <Filter>Game\Hero</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Dominion\Dominion.cpp">
+      <Filter>Game\Dominion</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Hero\HeroManager.cpp">
+      <Filter>Game\Hero</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Minion\MinionManager.cpp">
+      <Filter>Game\Minion</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\COOPvsAI.lua">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="Scripts\Dominion.lua">
+      <Filter>Scripts</Filter>
+    </None>
+  </ItemGroup>
+</Project>

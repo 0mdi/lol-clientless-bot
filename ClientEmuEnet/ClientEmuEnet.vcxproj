@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AB55A078-9984-4C72-9020-067532ABFF99}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ClientEmuEnet</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\LuaBind\include;C:\Boost\include\boost-1_55;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\LuaBind\lib;C:\Boost\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Boost\include\boost-1_55;C:\LuaBind\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\LuaBind\lib;C:\Boost\lib;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)x64\$(Configuration)\</OutDir>
+    <TargetName>ClientEmu</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;LUABIND_DYNAMIC_LINK;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;LUABIND_DYNAMIC_LINK;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>luabind.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/SAFESEH:NO %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="common.h" />
+    <ClInclude Include="Core\base64.h" />
+    <ClInclude Include="Core\blowfish\blowfish.h" />
+    <ClInclude Include="Core\Console.h" />
+    <ClInclude Include="Core\MemoryStream.h" />
+    <ClInclude Include="Core\utf8.h" />
+    <ClInclude Include="Core\utf8\checked.h" />
+    <ClInclude Include="Core\utf8\core.h" />
+    <ClInclude Include="Core\utf8\unchecked.h" />
+    <ClInclude Include="ENET\enet.h" />
+    <ClInclude Include="ENET\enet\callbacks.h" />
+    <ClInclude Include="ENET\enet\list.h" />
+    <ClInclude Include="ENET\enet\protocol.h" />
+    <ClInclude Include="ENET\enet\time.h" />
+    <ClInclude Include="ENET\enet\types.h" />
+    <ClInclude Include="ENET\enet\unix.h" />
+    <ClInclude Include="ENET\enet\utility.h" />
+    <ClInclude Include="ENET\enet\win32.h" />
+    <ClInclude Include="Game\Dominion\Dominion.h" />
+    <ClInclude Include="Game\Entity\Entity.h" />
+    <ClInclude Include="Game\GameClient.h" />
+    <ClInclude Include="Game\Hero\Hero.h" />
+    <ClInclude Include="Game\Hero\HeroManager.h" />
+    <ClInclude Include="Game\Item\Item.h" />
+    <ClInclude Include="Game\Minion\Minion.h" />
+    <ClInclude Include="Game\Minion\MinionManager.h" />
+    <ClInclude Include="Game\Packets.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Core\base64.cpp" />
+    <ClCompile Include="Core\blowfish\blowfish.cpp" />
+    <ClCompile Include="ENET\callbacks.c" />
+    <ClCompile Include="ENET\host.c" />
+    <ClCompile Include="ENET\list.c" />
+    <ClCompile Include="ENET\packet.c" />
+    <ClCompile Include="ENET\peer.c" />
+    <ClCompile Include="ENET\protocol.c" />
+    <ClCompile Include="ENET\unix.c" />
+    <ClCompile Include="ENET\win32.c" />
+    <ClCompile Include="Game\Dominion\Dominion.cpp" />
+    <ClCompile Include="Game\GameClient.cpp" />
+    <ClCompile Include="Game\Hero\Hero.cpp" />
+    <ClCompile Include="Game\Hero\HeroManager.cpp" />
+    <ClCompile Include="Game\Minion\MinionManager.cpp" />
+    <ClCompile Include="Game\Packets.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\COOPvsAI.lua" />
+    <None Include="Scripts\Dominion.lua" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
